@@ -1,0 +1,12 @@
+<package project="Mer:Trunk:Base" name="xmlrpc-c">
+  <title>A lightweight RPC library based on XML and HTTP</title>
+  <description>XML-RPC is a quick-and-easy way to make procedure calls over the
+Internet. It converts the procedure call into XML document, sends it
+to a remote server using HTTP, and gets back the response as XML.
+
+This library provides a modular implementation of XML-RPC for C.
+
+
+</description>
+  <url>http://xmlrpc-c.sourceforge.net/</url>
+</package>

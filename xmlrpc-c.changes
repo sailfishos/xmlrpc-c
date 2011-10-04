@@ -1,0 +1,118 @@
+* Fri Aug 28 2009 Anas Nashif <anas.nashif@intel.com> - 1.16.6
+- Initial import into Moblin
+
+* Mon Jul 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.16.6-3.1582
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* Thu Feb 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.16.6-2.1582
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* Thu Dec 11 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.16.6-1.1582
+- updated to 1.16.6; rediffed patches
+- fixed client headers (bug #475887)
+
+* Sat Nov 15 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.16.4.1567-2
+- updated to 1.16.4
+- rediffed/updated patches
+- splitted some subpackages (c++, client) out of main package as they
+  introduce additional dependencies (c++, curl)
+
+* Sat Sep  6 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.14.8-2
+- fix license tag
+
+* Sat Jun 21 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.8-1
+- updated to 1.14.8
+
+* Sun May 25 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.6-1
+- updated to 1.14.6
+
+* Sat Apr 12 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.2-1
+- updated to 1.14.2
+- rediffed patches
+- added patch to fix broken usage of 'long long' datatype
+
+* Mon Mar 17 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.8-2
+- fixed cmake quoting so that pkgconfig files get correct version number
+- fixed handling of 'server-util' and '--cflags' within xmlrpc-c-config
+
+* Sun Mar 16 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.8-1
+- updated to 1.13.8
+- removed some patches which were applied upstream
+
+* Tue Feb 26 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.07-2
+- moved to advanced branched; rediffed/updated existing cmake patch
+  and fixed other compilation issues (#369841)
+
+* Mon Feb 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.06.23-2
+- Autorebuild for GCC 4.3
+
+* Wed Jan  2 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.23-1
+- use correct pkg-config script for 'xmlrpc-config abyss-server'
+  output (#355411)
+- updated to 1.06.23 (#355411)
+
+* Tue Sep  4 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.18-1
+- updated to 1.06.18
+
+* Thu Aug 16 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.17-1
+- updated to 1.06.17
+
+* Sun Jul 22 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.16-1
+- updated to 1.06.16
+
+* Thu Jun 14 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.14-1
+- updated to 1.06.14
+
+* Sun Apr  1 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.11-2
+- rediffed cmake patch against current version
+- made the xmlrpc-c-config compatible to the upstream version
+- added compatibility symlinks for some header files (thx to Robert de
+  Vries for reporting these two issues)
+
+* Sat Mar 17 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.11-1
+- updated to 1.06.11
+
+* Sat Feb  3 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.09-1
+- updated to 1.06.09
+- removed -typo patch since applied upstream
+
+* Mon Nov  6 2006 Jindrich Novy <jnovy@redhat.com> - 1.06.05-3
+- rebuild against the new curl
+
+* Mon Oct  2 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.05-2
+- updated cmake patch
+- strip installed libraries
+
+* Wed Sep 20 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.05-1
+- updated to 1.06.05
+- merged + updated patches
+
+* Sat Sep 16 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.04-1
+- updated to 1.06.04
+- patched the broken buildsystem
+- disabled libwww backend explicitely
+
+* Sun Jun  4 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.05-1
+- updated to 1.05
+- updated patches
+
+* Sat Feb 18 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-2
+- rebuilt for FC5
+
+* Sun Dec 18 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-1
+- added libxml2-devel and openssl-devel Requires: for the -devel
+  subpackage
+- ship doc/* instead of doc
+- initial Fedora Extras package (review 175840)
+
+* Thu Dec 15 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-0.1
+- disabled w3c-libwww because it does not exist anymore in FC5 and
+  seems to be unmaintained upstream
+- added missing libxml2-devel
+- cleaned up list of %%doc files
+- fixed gcc4.1 build issues
+- removed static libraries when there exists a corresponding dynamic one
+
+
+* Tue Aug  2 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.03.02-1
+- Initial build.
